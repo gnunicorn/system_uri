@@ -53,10 +53,12 @@ pub unsafe extern "C" fn install(bundle_id: FfiString,
 
         let schemes = schemes.to_string()?;
 
-        rust_install(app,
+        let ret = rust_install(app,
                      schemes.split(',')
                          .map(|s| s.to_string())
-                         .collect())
+                         .collect());
+        println!("Result {:?}", ret);
+        ret
     })
 }
 
