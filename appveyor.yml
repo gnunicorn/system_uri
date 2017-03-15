@@ -15,13 +15,13 @@ environment:
   matrix:
     # MinGW
     - TARGET: i686-pc-windows-gnu
-      TARGET_NAME: win32-x32
+      TARGET_NAME: win32-ia32
     - TARGET: x86_64-pc-windows-gnu
       TARGET_NAME: win32-x64
 
     # MSVC
     - TARGET: i686-pc-windows-msvc
-      TARGET_NAME: win-i686-msvc
+      TARGET_NAME: win-ia32-msvc
     - TARGET: x86_64-pc-windows-msvc
       TARGET_NAME: win-x86_64-msvc
 

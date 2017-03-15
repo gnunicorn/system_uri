@@ -41,7 +41,7 @@ matrix:
     # Linux
     - env: >
         TARGET=i686-unknown-linux-gnu
-        TARGET_NAME=linux-x32
+        TARGET_NAME=linux-ia32
       os: linux
 
     - env: >
@@ -59,7 +59,7 @@ matrix:
     # OSX
     - env: >
         TARGET=i686-apple-darwin
-        TARGET_NAME=darwin-x32
+        TARGET_NAME=darwin-ia32
         MACOSX_DEPLOYMENT_TARGET=10.7
       os: osx
     - env: >
